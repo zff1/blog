@@ -1,0 +1,20 @@
+alternate: Yi Zheng
+# 是否显示页面加载动画 loading-cat
+loader:
+  start: true # 当初次打开页面时，显示加载动画
+  switch: false # tab 切换到其他页面时，显示加载动画
+
+fireworks:
+  enable: false # 是否启用
+  color: # 烟花颜色
+    - "rgba(255,182,185,.9)"
+    - "rgba(250,227,217,.9)"
+    - "rgba(187,222,214,.9)"
+    - "rgba(138,198,209,.9)"
+
+# sidebar:
+#   # Sidebar Position.
+#   position: right
+#   # position: right
+#   # Replace the default avatar image and set the url here.
+#   avatar: https://raw.githubusercontent.com/zff1/pictureWare/main/43066042f62a1338d257ffa81534c2ba.jpeg
