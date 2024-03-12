@@ -12,9 +12,57 @@ fireworks:
     - "rgba(187,222,214,.9)"
     - "rgba(138,198,209,.9)"
 
-# sidebar:
-#   # Sidebar Position.
-#   position: right
-#   # position: right
-#   # Replace the default avatar image and set the url here.
-#   avatar: https://raw.githubusercontent.com/zff1/pictureWare/main/43066042f62a1338d257ffa81534c2ba.jpeg
+menu:
+  home: / || home
+  posts:
+    default: / || feather
+    archives: /archives/ || list-alt
+    categories: /categories/ || th
+    tags: /tags/ || tags
+  friends: /friends/ || heart
+
+# Social Links
+# Usage: `Key: permalink || icon || color`
+# Key is the link label showing to end users.
+# Value before `||` delimiter is the target permalink,
+# secend value is the name of Font icon.
+social:
+  github: https://github.com/zff1 || github || "#191717"
+  #google: https://plus.google.com/yourname || google
+  twitter: https://twitter.com/yizhengff || twitter || "#00aff0"
+  # zhihu: https://www.zhihu.com/people/rurismzk || zhihu || "#1e88e5"
+  # music: https://music.163.com/#/user/home?id=12886823 || cloud-music || "#e60026"
+  # weibo: https://weibo.com/amehime || weibo || "#ea716e"
+  about: https://space.bilibili.com/177830229 || bilibili || "#fb7299"
+  email: mailto:670680176@qq.com || envelope || "#55acd5"
+  #facebook: https://www.facebook.com/yourname || facebook
+  #stackoverflow: https://stackoverflow.com/yourname || stack-overflow
+  #youtube: https://youtube.com/yourname || youtube
+  #instagram: https://instagram.com/yourname || instagram
+  #skype: skype:yourname?call|chat || skype
+  #douban: https://www.douban.com/people/yourname/ || douban
+
+sidebar:
+  # Sidebar Position.
+  position: right
+  # Replace the default avatar image and set the url here.
+  # avatar: https://raw.githubusercontent.com/zff1/pictureWare/main/43066042f62a1338d257ffa81534c2ba.jpeg
+
+footer:
+  # Specify the date when the site was setup. If not defined, current year will be used.
+  since: 2010
+  icon:
+    name: sakura rotate
+    # Change the color of icon, using Hex Code.
+    color: "#ffc0cb"
+  # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+  count: true
+  powered: true
+
+post:
+  # Dependencies: https://github.com/theme-next/hexo-symbols-count-time
+  count: true
+
+widgets:
+  random_posts: true # 显示随机文章
+  recent_comments: true # 显示最近评论
