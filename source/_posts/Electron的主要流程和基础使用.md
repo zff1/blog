@@ -84,22 +84,22 @@ Electron的主进程是一个拥有着完全操作系统访问权限的Node.js
 ``` javascript scanner
 //main.js
 const createWindow = () => {
-const win = new BrowserWindow({
-width: 800 ,
-height: 600 ,
-webPreferences: {
-preload: path.join(__dirname, 'preload.js')
-}
-})
+        const win = new BrowserWindow({
+        width: 800 ,
+        height: 600 ,
+        webPreferences: {
+        preload: path.join(__dirname, 'preload.js')
+    }
+})}
 
 //preload.js
 const { contextBridge } = require('electron')
 
 contextBridge.exposeInMainWorld('versions', {
-node: () => process.versions.node,
-chrome: () => process.versions.chrome,
-electron: () => process.versions.electron
-// 除函数之外，我们也可以暴露变量
+    node: () => process.versions.node,
+    chrome: () => process.versions.chrome,
+    electron: () => process.versions.electron
+    // 除函数之外，我们也可以暴露变量
 })
 ```
 
